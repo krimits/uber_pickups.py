@@ -17,7 +17,7 @@ import datetime
 #Στέλνουμε μια GET αίτηση στο API του visualcrossing ζητώντας να μας επιστραφεί
 #ένα json για το ζητούμενο χρονικό διάστημα.
 #ΠΡΟΣΟΧΗ! Μην ξεχάσετε να βάλετε το API Key που έχετε λάβει.
-d1 = requests.get('https://weather.visualcrossing.com/VisualCrossingWebServices/rest/services/timeline/Patras%2C%20Greece/2022-05-01/2022-05-14?unitGroup=metric&include=hours&key=YourKey&contentType=json')
+d1 = requests.get('https://weather.visualcrossing.com/VisualCrossingWebServices/rest/services/retrievebulkdataset?&key=8S3LHGEER94QSZ96XCJ7MJRTH&taskId=3726a11c02a91d7e2560433d8e951a1b&zip=false')
 
 response = d1.json()
 #print(type(response)) 
